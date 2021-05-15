@@ -20,31 +20,30 @@
 }
 
 .header {
-  font-family: 'SweetGothic-Light', Fallback, sans-serif;
+  font-family: "SweetGothic-Light", Fallback, sans-serif;
 }
 
 .dish {
   display: grid;
   justify-content: space-around;
   grid-template-areas:
-    'name price'
-    'description description'
-  ;
+    "name price"
+    "description description";
   padding-bottom: 24px;
   gap: 8px 16px;
   text-align: left;
 }
 
 .dishName {
-  font-family: 'SweetGothic-Light', Fallback, sans-serif;
-  grid-area: 'name';
+  font-family: "SweetGothic-Light", Fallback, sans-serif;
+  grid-area: "name";
 }
 
 .dishPrice {
-  font-family: 'SweetGothic-Light', Fallback, sans-serif;
-  grid-area: 'price';
+  font-family: "SweetGothic-Light", Fallback, sans-serif;
+  grid-area: "price";
 }
 
 .dishDescription {
-  grid-area: 'description';
+  grid-area: "description";
 }

@@ -19,7 +19,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--primary-cream);
-  font-family: 'GillSans-Light', Fallback, sans-serif;
+  font-family: "GillSans-Light", Fallback, sans-serif;
   color: var(--primary-text-dark);
 }
 
@@ -33,11 +33,11 @@ a {
 }
 
 @font-face {
-  font-family: 'SweetGothic-Light';
-  src: url('/fonts/SweetGothic-Light.ttf')  format('truetype');
+  font-family: "SweetGothic-Light";
+  src: url("/fonts/SweetGothic-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'GillSans-Light';
-  src: url('/fonts/GillSans-Light.ttf')  format('truetype');
+  font-family: "GillSans-Light";
+  src: url("/fonts/GillSans-Light.ttf") format("truetype");
 }

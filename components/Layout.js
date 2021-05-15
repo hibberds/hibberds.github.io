@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
-import NavItem from '../components/NavItem';
+import NavItem from "../components/NavItem";
 
 function Layout({ children }) {
   return (
@@ -13,14 +13,22 @@ function Layout({ children }) {
 
       <header className={styles.header}>
         <div>
-          <img src="/images/instagram.png" alt="Instagram" className={styles['social-media']}/>
+          <img
+            src="/images/instagram.png"
+            alt="Instagram"
+            className={styles["social-media"]}
+          />
         </div>
         <div>
           <Link href="/">
-            <img src="/images/primary-logo.svg" alt="Hibberd's" className={styles.logo}/>
+            <img
+              src="/images/primary-logo.svg"
+              alt="Hibberd's"
+              className={styles.logo}
+            />
           </Link>
         </div>
-        <div className={styles['phone-number']}>01234 567890</div>
+        <div className={styles["phone-number"]}>01234 567890</div>
       </header>
 
       <nav className={styles.nav}>

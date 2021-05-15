@@ -1,8 +1,8 @@
-import styles from '../styles/Menu.module.css';
+import styles from "../styles/Menu.module.css";
 
-const renderPrice = price => `£${price.toFixed(2)}`;
+const renderPrice = (price) => `£${price.toFixed(2)}`;
 
-function MenuItem({name, description, price}) {
+function MenuItem({ name, description, price }) {
   return (
     <div className={styles.dish}>
       <div className={styles.dishName}>{name}</div>
@@ -16,12 +16,12 @@ const appetisers = [
   {
     name: "Lobster Thermidor",
     description: "Here's a description for an amazingly delicious dish",
-    price: 13.5
+    price: 13.5,
   },
   {
     name: "Cheese Toastie",
     description: "Here's a description for an amazingly delicious dish",
-    price: 6.5
+    price: 6.5,
   },
 ];
 
@@ -29,22 +29,29 @@ const mains = [
   {
     name: "Lobster Thermidor",
     description: "Here's a description for an amazingly delicious dish",
-    price: 13.5
+    price: 13.5,
   },
   {
     name: "Cheese Toastie",
     description: "Here's a description for an amazingly delicious dish",
-    price: 6.5
+    price: 6.5,
   },
 ];
 
-const renderDishes = (dishes) => dishes.map(dish => <MenuItem {...dish} />);
+const renderDishes = (dishes) => dishes.map((dish) => <MenuItem {...dish} />);
 
-const Flourish = () => <img src="/images/flourish.svg" alt="Mains" className={styles.logo} width="100px"/>;
+const Flourish = () => (
+  <img
+    src="/images/flourish.svg"
+    alt="Mains"
+    className={styles.logo}
+    width="100px"
+  />
+);
 
 function Menu() {
   return (
-    <div className={styles['menu-container']}>
+    <div className={styles["menu-container"]}>
       <div className={styles.menu}>
         <h1 className={styles.header}>Menu</h1>
         <div className={styles.menuSection}>

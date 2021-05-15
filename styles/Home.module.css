@@ -2,10 +2,9 @@
   padding: 32px;
   display: grid;
   grid-template-areas:
-    'header'
-    'nav'
-    'main'
-  ;
+    "header"
+    "nav"
+    "main";
 }
 
 .header {
@@ -26,7 +25,6 @@
   grid-column-start: 2;
 }
 
-
 .nav {
   display: grid;
 
@@ -35,7 +33,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
 
-  font-family: 'SweetGothic-Light', Fallback, sans-serif;
+  font-family: "SweetGothic-Light", Fallback, sans-serif;
   font-size: 24px;
 
   text-transform: uppercase;
