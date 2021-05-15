@@ -2,13 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-import NavItem from "../components/NavItem";
+import NavItem from "./NavItem";
 
 function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Hibberd's</title>
+        <title>Hibberd&apos;s</title>
       </Head>
 
       <header className={styles.header}>
