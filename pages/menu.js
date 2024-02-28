@@ -6,7 +6,7 @@ function MenuItem({ name, description, price }) {
   return (
     <div className={styles.dish}>
       <div className={styles.dishName}>{name}</div>
-      <div className={styles.dishPrice}>{renderPrice(price)}</div>
+      {price && <div className={styles.dishPrice}>{renderPrice(price)}</div>}
       <div className={styles.dishDescription}>{description}</div>
     </div>
   );
@@ -16,7 +16,7 @@ const appetisers = [
   {
     name: "Lobster Thermidor",
     description: "Here's a description for an amazingly delicious dish",
-    price: 13.5,
+    // price: 13.5,
   },
   {
     name: "Cheese Toastie",

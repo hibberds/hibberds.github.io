@@ -1,0 +1,63 @@
+.about {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    ". experience ."
+    ". ideals ."
+    "principles principles principles"
+    ". established .";
+  gap: 16px;
+  padding: 16px;
+}
+
+.header {
+  padding: 16px;
+  grid-area: header;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.ideals {
+  grid-area: ideals;
+}
+
+.principles {
+  grid-area: principles;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 10px; */
+  /* max-width: 800px; */
+}
+
+.principles li {
+  list-style: none;
+  padding: 32px;
+  font-size: 20px;
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+
+.principles li:nth-child(1) {
+  background-color: var(--primary-spring);
+  color: var(--primary-dark);
+}
+.principles li:nth-child(2) {
+  background-color: var(--primary-summer);
+  color: var(--primary-dark);
+}
+.principles li:nth-child(3) {
+  background-color: var(--primary-winter);
+  color: var(--primary-text-light);
+}
+
+.established {
+  grid-area: established;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: right;
+}
